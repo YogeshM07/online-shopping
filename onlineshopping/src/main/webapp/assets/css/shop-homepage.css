@@ -6,3 +6,17 @@
 body {
   padding-top: 56px;
 }
+
+.wrapper{
+	min-height: 100%;
+	position: relative;
+}
+
+html {
+	height: 100%;
+}
+
+.footer11{
+	position: absolute;
+	bottom: 0%;
+}
