@@ -9,12 +9,12 @@
           
           <li id="about">
             <a class="nav-link" href="${contextRoot}/about">About</a>
-          </li>
-          <li id="listproducts" >
-            <a class="nav-link" href="${contextRoot}/listproducts">View Product</a>
-          </li>
+          </li>      
           <li id="contact">
             <a class="nav-link" href="${contextRoot}/contact">Contact</a>
+          </li>
+             <li id="listproducts" >
+            <a class="nav-link" href="${contextRoot}/show/all/products">View Product</a>
           </li>
         </ul>
       </div>

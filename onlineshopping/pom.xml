@@ -13,8 +13,16 @@
 		<spring.version>5.2.6.RELEASE</spring.version>
 	</properties>
 	<dependencies>
-	
-	<dependency>
+
+		<!-- link BackEnd Project -->
+		<dependency>
+			<groupId>net.kzn</groupId>
+			<artifactId>shoppingBackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+
+		</dependency>
+
+		<dependency>
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>

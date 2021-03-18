@@ -15,6 +15,9 @@
 
 	<context:component-scan
 		base-package="net.kzn.onlineshopping.controller"/>
+   <context:component-scan
+		base-package="net.kzn.shoppingBackend.daoImpl"/>    <!-- add because error-UnsatisfiedDependencyException: Error creating bean with name 'pageController': Unsatisfied dependency expressed through field 'categoryDAO'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'net.kzn.shoppingBackend.dao.CategoryDAO' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)} -->
+
 
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">

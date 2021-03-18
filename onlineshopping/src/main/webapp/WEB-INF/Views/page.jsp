@@ -63,7 +63,13 @@
 				<!-- loading home content -->
 				<%@include file="contact.jsp"%>
 			</c:if>
-			<!-- /.container -->
+			
+			<c:if test="${userClickAllproducts==true or userClickcategoryproducts==true}">
+				<!-- loading home content -->
+				<%@include file="listProducts.jsp"%>
+			</c:if>
+			
+			
 		</div>
 		<!-- Footer -->
 		<%@include file="./shared/footer.jsp"%>
