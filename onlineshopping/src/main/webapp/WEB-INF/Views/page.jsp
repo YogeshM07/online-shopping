@@ -35,6 +35,8 @@
 <!-- Bootstrap core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
+<link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
+
 <!-- Custom styles for this template -->
 <link href="${css}/shop-homepage.css" rel="stylesheet">
 
@@ -69,6 +71,11 @@
 				<%@include file="listProducts.jsp"%>
 			</c:if>
 			
+			<c:if test="${userClickShowProduct==true}">
+				<!-- loading home content -->
+				<%@include file="singleProduct.jsp"%>
+			</c:if>
+			
 			
 		</div>
 		<!-- Footer -->
@@ -77,6 +84,9 @@
 		<!-- Bootstrap core JavaScript -->
 		<script src="${js}/jquery.js"></script>
 		<script src="${js}/bootstrap.bundle.min.js"></script>
+		<script src="${js}/jquery.dataTables.js"></script>
+		
+		<script src="${js}/dataTables.bootstrap.js"></script>
 		<script src="${js}/myapp.js"></script>
 
 	</div>
